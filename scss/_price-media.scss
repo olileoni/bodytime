@@ -1,0 +1,40 @@
+
+@media (max-width: 1328px) {
+    .price .container {
+      padding: 0 16px;
+    }
+  }
+
+
+@media (max-width: 840px) {
+    .price {
+        &__control {
+            &-title {
+                max-width: 600px;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .price {
+        &__control {
+            &-title {
+                max-width: 400px;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .price {
+        &__control {
+            &-title {
+                max-width: 170px;
+            }
+        }
+        &__list-value {
+            max-width: 130px;
+        }
+    }
+}

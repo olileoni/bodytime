@@ -1,0 +1,129 @@
+.actions .container {
+    padding-left: 7px;
+}
+.actions {
+    position: relative;
+    background-color: $bg-gray-darck;
+    padding-top: calc(65px + (167 - 65) * ((100vw - 320px) / (1920 - 320)));
+    padding-bottom: calc(72px + (176 - 72) * ((100vw - 320px) / (1920 - 320)));
+    &__title {
+        margin-bottom: calc(40px + (82 - 40) * ((100vw - 320px) / (1920 - 320)));
+        padding-left: 9px;
+    }
+    &__card {
+        margin-bottom: calc(36px + (50 - 36) * ((100vw - 320px) / (1920 - 320)));
+        display: flex;
+        border-radius: 16px;
+        background: $accent-color-white;
+        gap: calc(16px + (35 - 16) * ((100vw - 320px) / (1920 - 320)));
+        &-img {
+            flex: 0 0 50%;
+            position: relative;
+        }
+        &-img img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            border-radius: 16px 0 0 16px;
+            top: 0;
+            left: 0;
+            margin-right: calc(16px + (33 - 16) * ((100vw - 320px) / (1920 - 320)));
+        }
+        &-title {
+            margin-top: calc(15px + (81 - 15) * ((100vw - 320px) / (1920 - 320)));
+            margin-bottom: calc(16px + (30 - 16) * ((100vw - 320px) / (1920 - 320)));
+            font-family: $titles-font;
+            font-weight: 400;
+            font-size: calc(20px + 12 * ((100vw - 320px) / (1920 - 320)));
+            line-height: 130%;
+        }
+        &-text {
+            max-width: 450px;
+            margin-bottom: calc(16px + (20 - 16) * ((100vw - 320px) / (1920 - 320)));
+            font-size: calc(14px + 4 * ((100vw - 320px) / (1920 - 320)));
+            line-height: 170%;
+            padding-right: 10px;
+        }
+        &-price {
+            color: $accent-color;
+            font-family: $titles-font;
+            font-size: calc(20px + 12 * ((100vw - 320px) / (1920 - 320)));
+            line-height: 170%;
+            margin-bottom: calc(12px + (22 - 12) * ((100vw - 320px) / (1920 - 320)));
+            margin-top: 0;
+            span {
+                font-size: calc(14px + 4 * ((100vw - 320px) / (1920 - 320)));
+                text-decoration: line-through;
+            }
+        }
+        &-more {
+            display: inline-block;
+            font-family: $titles-font;
+            font-size: calc(16px + 2 * ((100vw - 320px) / (1920 - 320)));
+            line-height: 170%;
+            border-bottom: 1px solid $main-color;
+            padding-bottom: 0;
+            margin-bottom: calc(24px + (80 - 24) * ((100vw - 320px) / (1920 - 320)));
+        }
+    }
+        &__slider {
+            &-buttons {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 20px;
+                gap: calc(200px + (375 - 200) * ((100vw - 320px) / (1920 - 320)));
+    }
+        &-prev,
+        &-next {
+            background-color: $accent-color-white;
+            border-radius: 50%;
+            width: calc(40px + (64 - 40) * ((100vw - 320px) / (1920 - 320)));
+            height: calc(40px + (64 - 40) * ((100vw - 320px) / (1920 - 320)));
+            transition: all .3s;
+            &:hover {
+                background-color: $accent-color;
+            }
+            &:active {
+                background-color: $bg-color-active;
+            }
+            }
+            &-prev img,
+            &-next img {
+                width: calc(7px + (12 - 7) * ((100vw - 320px) / (1920 - 320))); 
+                height: calc(14px + (23 - 14) * ((100vw - 320px) / (1920 - 320)));
+            }
+}
+
+}
+
+.swiper-pagination {
+  position: static;
+  margin-top: -40px;  
+}
+
+
+.swiper-pagination-bullet {
+        width: calc(8px + (16 - 8) * ((100vw - 320px) / (1920 - 320)));
+        height: calc(8px + (16 - 8) * ((100vw - 320px) / (1920 - 320)));
+        background: $pagination-color;
+        opacity: 1;
+        margin-right: calc(12px + (19 - 12) * ((100vw - 320px) / (1920 - 320))) !important;
+}
+.swiper-pagination-bullet:last-child {
+        margin-right: 0;
+}
+
+.swiper-pagination-bullet-active {
+    background: $main-color;
+}
+
+.swiper-button-prev::after, 
+.swiper-button-next::after {
+    display: none;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    position: static;
+}

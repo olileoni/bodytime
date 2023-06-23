@@ -1,0 +1,69 @@
+.actions__page {
+    background: #F3F3F3;
+    &-title {
+        margin-top: calc(72px + (116 - 72) * ((100vw - 320px) / (1920 - 320)));
+        margin-bottom: calc(40px + (82 - 40) * ((100vw - 320px) / (1920 - 320)));
+    }
+}
+
+.actions {
+    &__items {
+        padding-bottom: calc(72px + (176 - 72) * ((100vw - 320px) / (1920 - 320)));
+    }
+    &__card {
+        margin-bottom: calc(36px + (50 - 36) * ((100vw - 320px) / (1920 - 320)));
+        display: flex;
+        border-radius: 16px;
+        &-img {
+            flex: 0 0 50%;
+            position: relative;
+        }
+        &-img img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            border-radius: 16px 0 0 16px;
+            top: 0;
+            left: 0;
+            margin-right: calc(16px + (33 - 16) * ((100vw - 320px) / (1920 - 320)));
+        }
+        &-title {
+            margin-top: calc(15px + (81 - 15) * ((100vw - 320px) / (1920 - 320)));
+            margin-bottom: calc(16px + (30 - 16) * ((100vw - 320px) / (1920 - 320)));
+            font-family: $titles-font;
+            font-weight: 400;
+            font-size: calc(20px + 12 * ((100vw - 320px) / (1920 - 320)));
+            line-height: 130%;
+        }
+        &-text {
+            max-width: 450px;
+            margin-bottom: calc(16px + (20 - 16) * ((100vw - 320px) / (1920 - 320)));
+            font-size: calc(14px + 4 * ((100vw - 320px) / (1920 - 320)));
+            line-height: 170%;
+            padding-right: 10px;
+        }
+        &-price {
+            color: $accent-color;
+            font-family: $titles-font;
+            font-size: calc(20px + 12 * ((100vw - 320px) / (1920 - 320)));
+            line-height: 170%;
+            margin-bottom: calc(12px + (22 - 12) * ((100vw - 320px) / (1920 - 320)));
+            margin-top: 0;
+            span {
+                font-size: calc(14px + 4 * ((100vw - 320px) / (1920 - 320)));
+                text-decoration: line-through;
+            }
+        }
+        &-more {
+            display: inline-block;
+            font-family: $titles-font;
+            font-size: calc(16px + 2 * ((100vw - 320px) / (1920 - 320)));
+            line-height: 170%;
+            border-bottom: 1px solid $main-color;
+            padding-bottom: 0;
+            margin-bottom: calc(24px + (80 - 24) * ((100vw - 320px) / (1920 - 320)));
+        }
+    }
+}
+    
+

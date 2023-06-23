@@ -1,0 +1,15 @@
+@media (max-width: 650px) {
+    .actions {
+        &__card {
+            flex-direction: column;
+            &-img img {
+                position: static;
+                border-radius: 16px 16px 0 0;
+            }
+            &-content {
+                margin-left: calc(24px + (40 - 24) * ((100vw - 320px) / (1920 - 320)));
+            }
+        }
+        
+    }
+}

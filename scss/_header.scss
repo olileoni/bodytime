@@ -1,0 +1,62 @@
+.header {
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.1);
+    &__container {
+        max-width: 1585px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: calc(13px + (32 - 13) * ((100vw - 320px) / (1920 - 320)));
+        padding-bottom: calc(13px + (29 - 13) * ((100vw - 320px) / (1920 - 320)));
+    }
+    &__nav-media {
+        display: none;
+    }
+    &__list {
+        display: flex;
+        gap: 56px;
+    }
+    &__link {
+        padding-bottom: 0;
+        border-bottom: 3px solid transparent;
+        transition: all .3s;
+        &:hover {
+            padding-bottom: 5px;
+            border-bottom: 3px solid $accent-color;
+           }
+    }
+    &__burger {
+        display: none;
+    }
+    &__contacts {
+        display: flex;
+        align-items: center;
+    }
+    &__phone {
+        display: flex;
+        align-items: center;
+        &-img {
+            margin-right: 15px;
+        }
+        &-num {
+            margin-right: 56px;
+        }
+    }
+    &__address {
+        display: flex;
+        align-items: center;
+        &-img {
+            margin-right: 15px;
+        }
+        &-text {
+            max-width: 362px;
+            font-size: 14px;
+            line-height: 150%;
+        }
+    }
+}
+
+.active {
+    padding-bottom: 5px;
+    border-bottom: 3px solid $accent-color;
+}

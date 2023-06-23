@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Vanta';
+  src: local('Vanta Regular'),
+       local('Vanta-Regular'),
+       url('../assets/fonts/Vanta.woff2') format('woff2'),
+       url('../assets/fonts/Vanta.woff') format('woff'),
+       url('../assets/fonts/Vanta.eot') format('eot'),
+       url('../assets/fonts/Vanta.otf') format('otf'),
+       url('../assets/fonts/Vanta.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'VantaLight';
+  src: local('VantaLight Regular'),
+       local('VantaLight-Regular'), 
+       url('../assets/fonts/VantaLight.woff2') format('woff2'),
+       url('../assets/fonts/VantaLight.woff') format('woff'),
+       url('../assets/fonts/VantaLight.eot') format('eot'),
+       url('../assets/fonts/VantaLight.otf') format('otf'),
+       url('../assets/fonts/VantaLight.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

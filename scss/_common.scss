@@ -1,0 +1,101 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+button,
+input {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+html,
+body {
+  height: 100%;
+  font-size: 16px;
+  font-family: $main-font;
+  color: $main-color;
+  scroll-behavior: smooth;
+}
+
+body.lock {
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.container {
+  max-width: 1328px;
+  margin: 0 auto;
+  padding-left: 14px;
+}
+
+@media (max-width: 1328px) {
+  .container {
+    padding: 0 16px;
+  }
+}
+
+.title {
+font-family: $titles-font;
+font-weight: 400;
+font-size: calc(28px + 20 * ((100vw - 320px) / (1920 - 320)));
+line-height: 130%;
+text-align: center;
+}
+
+.page__nav {
+  font-size: calc(12px + 4 * ((100vw - 320px) / (1920 - 320)));
+  padding-top: calc(20px + (32 - 20) * ((100vw - 320px) / (1920 - 320)));
+  margin-left: calc(16px + (160 - 16) * ((100vw - 320px) / (1920 - 320)));
+  &-other {
+      color: $accent-color;
+  }
+}
+
+@media (max-width: 768px) {
+  .page__nav {
+    padding-top: calc(102px + (180 - 102) * ((100vw - 320px) / (1920 - 320)));
+  }
+}
+
+@media (max-width: 450px) {
+  .page__nav {
+    padding-top: calc(92px + (120 - 92) * ((100vw - 320px) / (1920 - 320)));
+  }
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid $accent-color;
+}
+input:invalid {
+  border-color: red;
+}
+
+input:not(:focus):invalid {
+  border-color: $border-color-gray;
+}
